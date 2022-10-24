@@ -1,0 +1,169 @@
+@import url("https://fonts.google.com/specimen/Libre+Franklin");
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.top h3 {
+  font-weight: 700;
+}
+.top .launching {
+  display: flex;
+  flex-direction: row;
+  font-size: larger;
+  font-weight: 700;
+}
+.top .launching .text {
+  color: hsl(0deg, 0%, 59%);
+}
+.top .launching .bold {
+  margin-left: 8px;
+  font-weight: 700;
+}
+.top .sub {
+  color: hsl(223deg, 100%, 88%);
+  top: -20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.form form input {
+  margin-left: -20px;
+  border: 2px solid hsl(223deg, 87%, 63%);
+  border-radius: 15px;
+  width: 120%;
+  height: 20px;
+}
+.form .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.form .button button {
+  background: hsl(223deg, 87%, 63%);
+  width: 60%;
+  border: 2px solid hsl(223deg, 87%, 63%);
+  border-radius: 15px;
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+.form .button button:hover {
+  cursor: pointer;
+}
+.form .error {
+  color: rgb(248, 125, 125);
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+.image {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  margin-top: 5px;
+}
+.image img {
+  width: 300px;
+  height: auto;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  color: hsl(223deg, 87%, 63%);
+  margin: 15px;
+}
+.icons:hover {
+  cursor: pointer;
+}
+.icons .logo {
+  margin: auto;
+  width: 20px;
+  text-align: center;
+  border: 2px solid hsl(0deg, 0%, 59%);
+  border-radius: 90%;
+  padding: 10px;
+}
+.icons .facebook {
+  margin: auto;
+  width: 20px;
+  margin-right: 14px;
+  text-align: center;
+  border: 2px solid hsl(0deg, 0%, 59%);
+  border-radius: 90%;
+  padding: 10px;
+}
+.icons .instagram {
+  margin: auto;
+  width: 20px;
+  margin-left: 14px;
+  text-align: center;
+  border: 2px solid hsl(0deg, 0%, 59%);
+  border-radius: 90%;
+  padding: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 10px;
+}
+.footer p {
+  width: 90%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .form {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .form form {
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15px;
+  }
+  .form form input {
+    height: 25px;
+    margin-left: 40px;
+    width: 400px;
+  }
+  .form .button button {
+    margin-top: -50px;
+    height: 28px;
+    width: 300px;
+    margin-left: 20px;
+    padding: 5px;
+  }
+  .form .error {
+    padding: 10px;
+    margin-left: 45px;
+    height: 30px;
+  }
+  .image {
+    margin-top: 35px;
+  }
+  .image img {
+    width: 750px;
+  }
+}/*# sourceMappingURL=App.css.map */
